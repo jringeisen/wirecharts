@@ -1,2 +1,2 @@
-# wirecharts
-A laravel livewire package that make integrating charts much easier.
+# Wire Charts
+A laravel livewire package that use Chartist.js to integrate charts easily with your application.
