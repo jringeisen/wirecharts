@@ -1,0 +1,39 @@
+{
+    "name": "jringeisen/wirecharts",
+    "description": "A package that allows you to integrate charts with your livewire application.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jringeisen",
+            "email": "ringeisen85@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jringeisen\\WireCharts\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jringeisen\\WireCharts\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jringeisen\\WireCharts\\WireChartsServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "livewire/livewire": "^2.7"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
