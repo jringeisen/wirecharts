@@ -17,7 +17,7 @@ You'll need the chartist.js assets, make sure to include these in the head of yo
 ## Publish Views
 If you'd like to make modifications to the views, you can do so by using the following command.
 ```php
-php artisan vendor:publish --tag=wirecharts-views
+php artisan vendor:publish --provider="Jringeisen\WireCharts\WireChartsServiceProvider" --tag="views"
 ```
 
 ## Adding the chart component
