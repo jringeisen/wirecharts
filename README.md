@@ -1,5 +1,5 @@
 ## About Wire Charts
-Wire Charts is a livewire package that allows you to easily integrate line charts, bar charts, and pie charts via the Chartist.js library.
+After using Laravel Nova in a handful of projects, I needed the Value and Trend Cards outside of Laravel Nova. So I decided to build a livewire package that uses Chartist.js library to accomplish this.
 
 ## Installation
 To get started with Wire Charts, you'll need to require the package.
@@ -38,9 +38,12 @@ The series option requires a specific format.
 
 ```php
 $data1 = [
-    ['meta' => '2021-01-01', 'value' => 5],
-    ['meta' => '2021-01-02', 'value' => 4],
-    ['meta' => '2021-01-03', 'value' => 1]
+    'count' => 100,
+    'data' => [
+        ['meta' => '2021-01-01', 'value' => 5],
+        ['meta' => '2021-01-02', 'value' => 4],
+        ['meta' => '2021-01-03', 'value' => 1]
+    ]
 ]
 ```
 

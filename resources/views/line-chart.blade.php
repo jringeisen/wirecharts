@@ -1,6 +1,7 @@
 <div id="wirecharts-card-{{$chartId}}" class="bg-white rounded-lg shadow {{ $height }}">
     <div id="wirecharts-title-{{$chartId}}" class="p-6">
-        <p>{{ $title }}</p>
+        <p class="text-gray-600">{{ $title }}</p>
+        <p class="text-gray-800 text-4xl mt-3">{{$series['count']}}</p>
     </div>
     <div id="wirecharts-{{$chartId}}" class="relative ct-chart">
         <div class="hidden absolute inline-block wirecharts-tooltip-{{$chartId}} bg-white text-xs shadow text-center px-3 py-1 rounded-md w-36">
@@ -21,7 +22,7 @@
 
             var data = {
                 // Our series array that contains series objects or in this case series data arrays
-                series: [@this.series]
+                series: [@this.series['data']]
             };
 
             var options = {
@@ -50,8 +51,8 @@
                     data.element._node.addEventListener('mouseover', e => {
                         const tooltip = document.getElementsByClassName('wirecharts-tooltip-' + @this.chartId)
 
-                        tooltip[0].style.top = data.y - 75 + 'px'
-                        tooltip[0].style.left = data.x > 200 ? data.x - 150 + 'px' : data.x + 'px'
+                        tooltip[0].style.top = data.y - 55 + 'px'
+                        tooltip[0].style.left = data.x > 200 ? data.x - 140 + 'px' : data.x + 'px'
 
                         tooltip[0].classList.remove('hidden')
 
