@@ -4,7 +4,7 @@
         <p class="text-gray-800 text-4xl mt-3">{{$series['count']}}</p>
     </div>
     <div id="wirecharts-{{$chartId}}" class="relative ct-chart">
-        <div class="hidden absolute inline-block wirecharts-tooltip-{{$chartId}} bg-white text-xs shadow text-center px-3 py-1 rounded-md w-36">
+        <div class="hidden absolute inline-block wirecharts-tooltip-{{$chartId}} bg-white text-xs shadow border-2 border-blue-400 text-center px-3 py-1 rounded-md w-36">
             <span class="wirecharts-tooltip-date-{{$chartId}}"></span><br>
             <span class="wirecharts-tooltip-value-{{$chartId}}"></span>
         </div>
