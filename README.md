@@ -1,5 +1,6 @@
 ## About Wire Charts
 After using Laravel Nova in a handful of projects, I needed the Value and Trend Cards outside of Laravel Nova. So I decided to build a livewire package that uses Chartist.js library to accomplish this.
+![Wire Charts trend card](public/images/trend-card.png?raw=true)
 
 ## Installation
 To get started with Wire Charts, you'll need to require the package.
